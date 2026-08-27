@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - EcoTrueque</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/formularios.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y MENÚ -->
+  <header>
+    <div class="logo">Eco<span>Trueque</span></div>
+
+    <button class="menu-toggle" id="btnMenu">&#9776;</button>
+
+    <nav>
+      <ul id="listaMenu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="empresas.html">Empresas</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="contenedor-formulario">
+      <h2>Contáctanos</h2>
+
+      <div class="mensaje-exito" id="mensajeExitoContacto">
+        ¡Mensaje enviado! Te responderemos pronto.
+      </div>
+
+      <form id="formContacto">
+        <div class="campo">
+          <label for="nombreContacto">Tu nombre</label>
+          <input type="text" id="nombreContacto" placeholder="Ej: Carlos Ruiz">
+          <span class="error" id="errorNombreContacto"></span>
+        </div>
+
+        <div class="campo">
+          <label for="correoContacto">Tu correo</label>
+          <input type="email" id="correoContacto" placeholder="correo@ejemplo.com">
+        </div>
+
+        <div class="campo">
+          <label for="mensajeContacto">Mensaje</label>
+          <textarea id="mensajeContacto" placeholder="Escribe tu mensaje aquí..."></textarea>
+          <span class="error" id="errorMensajeContacto"></span>
+        </div>
+
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 EcoTrueque - Proyecto académico de compra y venta de reciclaje</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/validar.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* ============================
+   ESTILOS PARA FORMULARIOS
+   Usado en: login, registro, empresas, contacto, productos
+   ============================ */
+
+.contenedor-formulario {
+  max-width: 450px;
+  margin: 40px auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.contenedor-formulario h2 {
+  color: #1b5e20;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #2e7d32;
+}
+
+.campo textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.error {
+  color: #c62828;
+  font-size: 13px;
+  margin-top: 4px;
+  display: none;
+}
+
+.mensaje-exito {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+  display: none;
+}
+
+.enlace-secundario {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.enlace-secundario a {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+/* Tipo de cuenta (persona o empresa) */
+.opciones-tipo {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.opciones-tipo label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: normal;
+  font-size: 14px;
+}

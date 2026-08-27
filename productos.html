@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - EcoTrueque</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/formularios.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y MENÚ -->
+  <header>
+    <div class="logo">Eco<span>Trueque</span></div>
+
+    <button class="menu-toggle" id="btnMenu">&#9776;</button>
+
+    <nav>
+      <ul id="listaMenu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="empresas.html">Empresas</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2 class="titulo-seccion">Materiales disponibles para comprar</h2>
+    <!-- Aquí se dibujan los productos con JavaScript -->
+    <div id="listaProductos"></div>
+  </section>
+
+  <!-- FORMULARIO PARA PUBLICAR UN NUEVO MATERIAL -->
+  <section style="background-color:#e8f5e9;">
+    <div class="contenedor-formulario">
+      <h2>Publicar material para vender</h2>
+
+      <div class="mensaje-exito" id="avisoPublicar">
+        ¡Tu material fue publicado con éxito!
+      </div>
+
+      <form id="formPublicar">
+        <div class="campo">
+          <label for="materialPublicar">Tipo de material</label>
+          <input type="text" id="materialPublicar" placeholder="Ej: Cartón, plástico, vidrio...">
+        </div>
+
+        <div class="campo">
+          <label for="cantidadPublicar">Cantidad</label>
+          <input type="text" id="cantidadPublicar" placeholder="Ej: 20 kg">
+        </div>
+
+        <div class="campo">
+          <label for="precioPublicar">Precio (COP)</label>
+          <input type="number" id="precioPublicar" placeholder="Ej: 30000">
+        </div>
+
+        <div class="campo">
+          <label for="vendedorPublicar">Tu nombre o empresa</label>
+          <input type="text" id="vendedorPublicar" placeholder="Ej: Juan Pérez">
+        </div>
+
+        <button type="submit" class="btn">Publicar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 EcoTrueque - Proyecto académico de compra y venta de reciclaje</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/productos.js"></script>
+</body>
+</html>

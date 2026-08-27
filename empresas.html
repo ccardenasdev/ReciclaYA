@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresas - EcoTrueque</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/formularios.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y MENÚ -->
+  <header>
+    <div class="logo">Eco<span>Trueque</span></div>
+
+    <button class="menu-toggle" id="btnMenu">&#9776;</button>
+
+    <nav>
+      <ul id="listaMenu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="empresas.html">Empresas</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2 class="titulo-seccion">Registro para empresas</h2>
+    <p style="text-align:center; max-width:600px; margin:0 auto 10px auto;">
+      Si tu empresa recicla o compra material en grandes volúmenes,
+      regístrate aquí para acceder a los proveedores de la plataforma.
+    </p>
+
+    <div class="contenedor-formulario">
+      <div class="mensaje-exito" id="mensajeExitoEmpresa">
+        ¡Empresa registrada con éxito!
+      </div>
+
+      <form id="formEmpresa">
+        <div class="campo">
+          <label for="nombreEmpresa">Nombre de la empresa</label>
+          <input type="text" id="nombreEmpresa" placeholder="Ej: Recicladora El Progreso">
+          <span class="error" id="errorNombreEmpresa"></span>
+        </div>
+
+        <div class="campo">
+          <label for="nitEmpresa">NIT</label>
+          <input type="text" id="nitEmpresa" placeholder="Ej: 900123456-1">
+          <span class="error" id="errorNitEmpresa"></span>
+        </div>
+
+        <div class="campo">
+          <label for="correoEmpresa">Correo de contacto</label>
+          <input type="email" id="correoEmpresa" placeholder="empresa@correo.com">
+          <span class="error" id="errorCorreoEmpresa"></span>
+        </div>
+
+        <div class="campo">
+          <label for="materialEmpresa">Material de interés</label>
+          <select id="materialEmpresa">
+            <option value="carton">Cartón</option>
+            <option value="plastico">Plástico</option>
+            <option value="vidrio">Vidrio</option>
+            <option value="metal">Metal / Chatarra</option>
+            <option value="todos">Todos los anteriores</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn">Registrar empresa</button>
+      </form>
+
+      <p class="enlace-secundario">
+        ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 EcoTrueque - Proyecto académico de compra y venta de reciclaje</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/validar.js"></script>
+</body>
+</html>
