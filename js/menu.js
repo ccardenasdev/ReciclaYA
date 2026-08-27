@@ -2,7 +2,7 @@
 // menu.js
 // Controla el menú que se abre/cierra en celulares
 // ============================
-
+//prueba github
 // Esperamos a que cargue toda la página
 document.addEventListener("DOMContentLoaded", function () {
   const boton = document.getElementById("btnMenu");
