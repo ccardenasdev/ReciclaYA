@@ -3,7 +3,7 @@
 // Validaciones simples para los formularios:
 // login, registro, empresas y contacto
 // ============================
-//prueba github
+
 // Función para mostrar un mensaje de error debajo de un campo
 function mostrarError(idError, mensaje) {
   const error = document.getElementById(idError);
